@@ -1,0 +1,201 @@
+@import url('../../data/Variaveis.css');
+
+.HeaderMenu {
+    background-color: var(--cor-principal);
+    margin: 0px;
+    padding: 0px;
+    height: 120px;
+    display: flex;
+}
+
+.HeaderMenu input, .Input {
+    border: none;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Urbanist';
+    padding-left: 10px;
+}
+
+.HeaderMenu input {
+    height: 40px;
+    width: 40%;
+    font-size: 22px;
+    margin-left: 100px;
+}
+.Nav{
+    justify-content: center;
+}
+
+.Input {
+    height: 30px;
+    width: 120px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.Logo {
+    margin: 10px 0px 10px 30px;
+}
+
+.Nav {
+    background-color: var(--cor-principal-escura);
+    padding:0 10px;
+    display: flex;
+}
+
+.Nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.Nav a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Menu {
+    display: flex;
+    list-style: none;
+}
+
+.Menu li {
+    margin: 10px 5px;
+}
+
+.Menu a {
+    height: 100%;
+    padding: 10px 15px;
+}
+
+.MenuContraido{
+    position: relative;
+    display: inline-block;
+}
+
+.MenuContraido input, .MenuContraido span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.MenuContraido input {
+    z-index: 100; /* Traz o input para cima */ 
+    opacity: 0; /* Esconde o input */
+    display: none;
+}
+
+.MenuContraido span {
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    background-image: url('./menu-icon-48x48.png');
+    background-size: 40px 40px;
+    background-position: center center;
+    cursor: pointer; /* Cursor de mãozinha */
+    display: none;
+}
+
+.MenuContraido input:checked ~ span {
+    /* Troca a imagem */
+    background-image: url('./close-icon-48x48.png');
+}
+
+@media screen and (max-width: 1300px) {
+    .Nav input {
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .Menu {
+        padding: 0 20px;
+    }
+
+    .Nav {
+        min-height: 88px;
+        padding: 0;
+    }   
+    .Nav .Input{
+        margin-right: 20px;
+        width: 150px;
+        height: 40px;
+    }
+
+    .Nav ul {
+        margin-top: 60px;
+    }
+    .Nav ul li {   /* Menu vertical */
+        display: block;
+        margin: 6px 0;
+    }
+    .Nav a {
+        width: 80%;
+        display: block;
+        font-size: 22px;
+    }
+    .MenuContraido {
+        margin-top: 24px;
+        width: 100%;
+    }
+    .MenuContraido ul {
+        display: none;
+    }
+
+    /* Mostra o botão do menu */
+    .MenuContraido input, .MenuContraido span {
+        display: block;
+        left: 20px;
+    }
+    .MenuContraido input:checked ~ ul {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .HeaderMenu {
+        padding: 20px;
+        display: block;
+        height: fit-content;
+    }
+    .HeaderMenu img {
+        margin: 0px auto 20px auto;
+        display: block;
+    }
+    .HeaderMenu input {
+        margin: 0px auto 0px auto;
+        display: block;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .HeaderMenu {
+        padding: 20px;
+        display: block;
+        height: fit-content;
+    }
+    .HeaderMenu img {
+        margin: 0px auto 20px auto;
+        display: block;
+        width: 200px;
+    }
+    .HeaderMenu input {
+        margin: 0px auto 0px auto;
+        display: block;
+        width: 80%;
+    }
+}

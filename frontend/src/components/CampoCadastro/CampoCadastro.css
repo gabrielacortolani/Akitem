@@ -1,0 +1,401 @@
+@import url('../../data/Variaveis.css');
+
+
+.Cadastro {
+    width: fit-content;
+    margin: 30px auto 0px auto;
+}
+
+.CampoCadastro {
+    border: var(--cor-bordas) 1px solid;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    padding: 10px 25px 25px 25px;
+    border-radius: 10px;
+    width: fit-content
+}
+
+.CampoCadastro input {
+    margin-top: 5px;
+    border: none;
+    box-shadow: 1px 2px 5px rgba(32, 32, 32, 0.322);
+    height: 40px;
+    font-family: 'Urbanist';
+    font-size: 1.3rem;
+    /* width: 400px;
+    margin-right: 300px; */
+    display: block;
+    padding-left: 10px;
+}
+
+ .CampoCadastro label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+}
+
+.Cadastro .Nome {
+    margin-right: 20px;
+    display: block;
+}
+
+.Cadastro .Nome input {
+    width: 450px;
+}
+
+.Cadastro .CPFCNPJ input {
+    width: 450px;
+}
+
+.Cadastro .CEP {
+    margin-right: 20px;
+}
+
+.CEP input {
+    width: 200px;
+}
+
+.Cadastro .Endereco {
+    margin-right: 20px;
+}
+
+.Cadastro .Endereco input {
+    width: 545px;
+}
+
+.Cadastro .Numero input {
+    width: 120px;
+}
+
+.Cadastro .Cidade {
+    margin-right: 20px;
+}
+
+.Cadastro .Cidade input{
+    width: 350px;
+}
+.Cadastro .Estado {
+    margin-right: 20px;
+}
+.Cadastro .Estado input{
+    width: 120px;
+}
+
+.Cadastro .Complemento input {
+    width: 400px;
+}
+
+.Cadastro .Email {
+    margin-right: 20px;
+}
+
+.Cadastro .Email input {
+    width: 450px;
+}
+.Cadastro .Senha input {
+    width: 450px;
+}
+
+.linha {
+    display: flex;
+    margin-top: 15px;
+}
+/*
+
+.Email {
+    margin: 0px;
+}
+
+.Senha  {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.Esqueci {
+    margin: 10px 0px 0px 0px;
+    font-size: 16px;
+    text-align: left;
+} */
+.Cadastro .CampoCadastro a {
+    text-decoration: none;
+}
+
+.Cadastro .CampoCadastro a:hover{
+    text-decoration: underline;
+}
+
+.Cadastro .Botoes {
+    margin-top: 20px;
+}
+
+.Cadastro .Botoes button {
+    font-family: 'Urbanist';
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  1px 2px 5px rgba(32, 32, 32, 0.322);
+    font-weight: bolder;
+}
+
+.Cadastro .Continuar {
+    background-color: var(--cor-botao-azul);
+    margin-right: 10px;
+}
+
+.Cadastro .Continuar:active{
+    background-color: var(--cor-botao-azul-clique);
+}
+.Cadastro .Cancelar {
+    background-color: var(--cor-botao-vermelho);
+}
+
+.Cadastro .Cancelar:active {
+    background-color: var(--cor-botao-vermelho-clique);
+}
+
+
+@media screen and (max-width: 1030px) {
+    .Cadastro .Nome input {
+        width: 400px;
+    }
+    
+    .Cadastro .CPFCNPJ input {
+        width: 400px;
+    }
+    
+    
+    .CEP input {
+        width: 150px;
+    }
+    
+    
+    .Cadastro .Endereco input {
+        width: 495px;
+    }
+    
+    .Cadastro .Numero input {
+        width: 120px;
+    }
+    
+    
+    .Cadastro .Cidade input{
+        width: 300px;
+    }
+    .Cadastro .Estado input{
+        width: 100px;
+    }
+    
+    .Cadastro .Complemento input {
+        width: 370px;
+    }
+
+    
+    .Cadastro .Email input {
+        width: 400px;
+    }
+    .Cadastro .Senha input {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .Cadastro .Nome input {
+        width: 350px;
+    }
+    
+    .Cadastro .CPFCNPJ input {
+        width: 350px;
+    }
+    
+    
+    .CEP input {
+        width: 110px;
+    }
+    
+    
+    .Cadastro .Endereco input {
+        width: 450px;
+    }
+    
+    .Cadastro .Numero input {
+        width: 105px;
+    }
+    
+    
+    .Cadastro .Cidade input{
+        width: 300px;
+    }
+    .Cadastro .Estado input{
+        width: 60px;
+    }
+    
+    .Cadastro .Complemento input {
+        width: 310px;
+    }
+
+    
+    .Cadastro .Email input {
+        width: 350px;
+    }
+    .Cadastro .Senha input {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+
+
+    .linha {
+        display: block;
+        margin: 0px;
+    }
+
+    .Cadastro label {
+        margin-top: 20px;
+    }
+
+    .Cadastro .Nome input {
+        width:  var(--largura-campos-break01);
+    }
+    
+    .Cadastro .CPFCNPJ input {
+        width:  var(--largura-campos-break01);
+    }
+    
+    
+    .CEP input {
+        width:  var(--largura-campos-break01);
+    }
+    
+    
+    .Cadastro .Endereco input {
+        width: var(--largura-campos-break01);
+    }
+    
+    .Cadastro .Numero input {
+        width:  var(--largura-campos-break01);
+    }
+    
+    
+    .Cadastro .Cidade input{
+        width:  var(--largura-campos-break01);
+    }
+    .Cadastro .Estado input{
+        width:  var(--largura-campos-break01);
+    }
+    
+    .Cadastro .Complemento input {
+        width: var(--largura-campos-break01);
+    }
+
+    
+    .Cadastro .Email input {
+        width: var(--largura-campos-break01);
+    }
+    .Cadastro .Senha input {
+        width: var(--largura-campos-break01);
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+
+    .linha {
+        display: block;
+        margin: 0px;
+    }
+
+    .Cadastro label {
+        margin-top: 20px;
+    }
+
+    .Cadastro .Nome input {
+        width:  var(--largura-campos-break02);
+    }
+    
+    .Cadastro .CPFCNPJ input {
+        width:  var(--largura-campos-break02);
+    }
+    
+    
+    .CEP input {
+        width:  var(--largura-campos-break02);
+    }
+    
+    
+    .Cadastro .Endereco input {
+        width: var(--largura-campos-break02);
+    }
+    
+    .Cadastro .Numero input {
+        width:  var(--largura-campos-break02);
+    }
+    
+    
+    .Cadastro .Cidade input{
+        width:  var(--largura-campos-break02);
+    }
+    .Cadastro .Estado input{
+        width:  var(--largura-campos-break02);
+    }
+    
+    .Cadastro .Complemento input {
+        width: var(--largura-campos-break02);
+    }
+
+    
+    .Cadastro .Email input {
+        width: var(--largura-campos-break02);
+    }
+    .Cadastro .Senha input {
+        width: var(--largura-campos-break02);
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .linha {
+        display: block;
+        margin: 0px;
+    }
+
+    .Cadastro label {
+        margin-top: 20px;
+    }
+
+    .Cadastro .Nome input {
+        width:  var(--largura-campos-break03);
+    }
+    
+    .Cadastro .CPFCNPJ input {
+        width:  var(--largura-campos-break03);
+    }
+    
+    
+    .CEP input {
+        width:  var(--largura-campos-break03);
+    }
+    
+    
+    .Cadastro .Endereco input {
+        width: var(--largura-campos-break03);
+    }
+    .Cadastro .Numero input {
+        width:  var(--largura-campos-break03);
+    }
+    .Cadastro .Cidade input{
+        width:  var(--largura-campos-break03);
+    }
+    .Cadastro .Estado input{
+        width:  var(--largura-campos-break03);
+    }
+    .Cadastro .Complemento input {
+        width: var(--largura-campos-break03);
+    }
+    .Cadastro .Email input {
+        width: var(--largura-campos-break03);
+    }
+    .Cadastro .Senha input {
+        width: var(--largura-campos-break03);
+    }
+}
